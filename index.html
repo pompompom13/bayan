@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bayan Lounge – кальянная у Бауманской</title>
+<meta name="description" content="Bayan Lounge – кальянная в минуте от м. Бауманская. Топовые табаки, бесплатная PS4, настольные игры, чай и бар. Ежедневно 12:00–02:00. +7 (915) 398-01-58">
+<meta name="theme-color" content="#140c1f">
+<meta property="og:title" content="Bayan Lounge – кальянная у Бауманской">
+<meta property="og:description" content="Минута от метро, топовые табаки, PS4 и настолки. Ежедневно 12:00–02:00">
+<meta property="og:image" content="img/p042.webp">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  document.documentElement.className += ' js';
+  try { if (localStorage.getItem('bayan-age') === 'yes') document.documentElement.className += ' age-ok'; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Bayan Lounge",
+  "telephone": "+79153980158",
+  "address": {"@type": "PostalAddress", "streetAddress": "Бауманская ул., 33/2с3", "addressLocality": "Москва", "addressCountry": "RU"},
+  "geo": {"@type": "GeoCoordinates", "latitude": 55.772827, "longitude": 37.679489},
+  "openingHours": "Mo-Su 12:00-02:00",
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.6", "ratingCount": "330"}
+}
+</script>
+</head>
+<body>
+
+<div class="age" id="age" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+  <div class="age__box">
+    <img src="img/bear.png" alt="" class="age__bear" width="120" height="155">
+    <div id="ageAsk">
+      <p class="age__title" id="ageTitle">Вам уже есть 18?</p>
+      <p class="age__text">На&nbsp;сайте есть информация о&nbsp;кальянах и&nbsp;алкоголе, поэтому он&nbsp;только для взрослых гостей.</p>
+      <div class="age__btns">
+        <button type="button" class="btn btn--neon" id="ageYes">Да, мне есть 18</button>
+        <button type="button" class="btn btn--ghost" id="ageNo">Нет</button>
+      </div>
+    </div>
+    <div id="ageDeny" hidden>
+      <p class="age__title">Будем ждать вас позже</p>
+      <p class="age__text">К&nbsp;сожалению, сайт доступен только совершеннолетним.</p>
+    </div>
+  </div>
+</div>
+
+<header class="top">
+  <div class="top__in">
+    <a href="#top" class="top__logo"><img src="img/bear.png" alt="" width="34" height="44"><span>Bayan Lounge</span></a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#hookah">Кальяны</a>
+      <a href="#inside">Внутри</a>
+      <a href="#bar">Чай и&nbsp;бар</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+      <a href="tel:+79153980158" class="nav__phone">+7 (915) 398-01-58</a>
+    </nav>
+    <a href="tel:+79153980158" class="btn btn--neon btn--sm top__cta">Забронировать</a>
+    <button class="burger" id="burger" aria-label="Меню навигации" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="smoke" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap hero__in">
+    <div class="hero__text">
+      <p class="status" id="status">Кальянная у Бауманской</p>
+      <h1 class="neon-title">Bayan <span>Lounge</span></h1>
+      <p class="hero__lead">Кальян от&nbsp;мастера, который понимает вас с&nbsp;первых трёх нот. Минута от&nbsp;метро и&nbsp;душевно до&nbsp;двух ночи.</p>
+      <div class="hero__actions">
+        <a href="tel:+79153980158" class="btn btn--neon">Забронировать стол</a>
+        <a href="#hookah" class="btn btn--ghost">Кальяны</a>
+      </div>
+      <a class="rating" href="https://yandex.ru/maps/org/bayan_lounge/74312804987/reviews/" target="_blank" rel="noopener">
+        <b>4,6</b><span class="stars" aria-hidden="true">★★★★★</span><span>330 оценок на&nbsp;Яндекс Картах</span>
+      </a>
+    </div>
+    <div class="hero__bear">
+      <img src="img/bear.png" alt="Медведь с баяном и кальяном – символ Bayan Lounge" width="765" height="988" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-label="Табаки в наличии">
+  <div class="marquee__track">
+    <span>Darkside</span><span>BlackBurn</span><span>Tangiers</span><span>Must Have</span><span>Overdose</span><span>Trofimov</span><span>Palitra</span><span>Энтузиаст</span><span>Starline</span><span>Adalya</span><span>Burn</span><span>Deus</span><span>Satyr</span><span>Afzal</span><span>WTO</span><span>Kraken</span>
+    <span aria-hidden="true">Darkside</span><span aria-hidden="true">BlackBurn</span><span aria-hidden="true">Tangiers</span><span aria-hidden="true">Must Have</span><span aria-hidden="true">Overdose</span><span aria-hidden="true">Trofimov</span><span aria-hidden="true">Palitra</span><span aria-hidden="true">Энтузиаст</span><span aria-hidden="true">Starline</span><span aria-hidden="true">Adalya</span><span aria-hidden="true">Burn</span><span aria-hidden="true">Deus</span><span aria-hidden="true">Satyr</span><span aria-hidden="true">Afzal</span><span aria-hidden="true">WTO</span><span aria-hidden="true">Kraken</span>
+  </div>
+</div>
+
+<!-- HOOKAH LEVELS -->
+<section class="levels" id="hookah">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="label">Кальяны</p>
+      <h2 class="h2">Выберите <em>уровень</em></h2>
+      <p class="lead">Мастер даст понюхать табаки, подберёт чашу и&nbsp;соберёт кальян под ваше настроение.</p>
+    </div>
+    <div class="cards">
+      <article class="lvl lvl--1 reveal">
+        <p class="lvl__n">Уровень 1</p>
+        <h3>Топчик базы</h3>
+        <p class="lvl__d">Проверенные хиты, которые всегда в&nbsp;деле. Густо, вкусно, качественно.</p>
+        <ul class="brands"><li>Darkside</li><li>BlackBurn</li><li>Overdose</li><li>Must Have</li><li>Palitra</li><li>Энтузиаст</li><li>Starline</li><li>Adalya</li><li>Burn</li><li>Deus</li><li>Satyr</li><li>Afzal</li></ul>
+        <p class="lvl__p">2&#8239;500&nbsp;₽</p>
+      </article>
+      <article class="lvl lvl--2 reveal">
+        <p class="lvl__n">Уровень 2</p>
+        <h3>Легенда жанра</h3>
+        <p class="lvl__d">Глубокий дым с&nbsp;характером. Для тех, кто не&nbsp;ищет компромиссов.</p>
+        <ul class="brands"><li>Tangiers</li><li>Trofimov Terror LE</li></ul>
+        <p class="lvl__p">2&#8239;800&nbsp;₽</p>
+      </article>
+      <article class="lvl lvl--3 reveal">
+        <p class="lvl__n">Уровень 3 · Босс</p>
+        <h3>Космическая коллекция</h3>
+        <p class="lvl__d">Мощно, статусно, бескомпромиссно. Парфюмерная глубина и&nbsp;дерзкий характер.</p>
+        <ul class="brands"><li>Deus Perfume</li><li>WTO</li><li>Kraken</li></ul>
+        <p class="lvl__p">3&#8239;800&nbsp;₽</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- INSIDE -->
+<section class="inside" id="inside">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="label">Внутри</p>
+      <h2 class="h2">Душевно, <em>как под баян</em></h2>
+      <p class="lead">Бархатные диваны, неон и&nbsp;стена табаков. Негромкая музыка и&nbsp;мастер, с&nbsp;которым интересно поговорить.</p>
+    </div>
+    <div class="mosaic">
+      <figure class="m m--a reveal"><img src="img/p042.webp" alt="Зал с бирюзовыми диванами честерфилд и горчичными стенами" loading="lazy"></figure>
+      <figure class="m m--b reveal"><img src="img/p008.webp" alt="Стена табаков Darkside в неоновой подсветке" loading="lazy"></figure>
+      <figure class="m m--c reveal"><img src="img/p056.webp" alt="Бархатные кресла в фиолетовом свете" loading="lazy"></figure>
+      <figure class="m m--d reveal"><img src="img/p005.webp" alt="Футбол на PlayStation на большом экране" loading="lazy"></figure>
+    </div>
+    <ul class="perks">
+      <li class="reveal"><b>PS4 бесплатно</b><span>Садитесь на&nbsp;диван и&nbsp;берите джойстик.</span></li>
+      <li class="reveal"><b>Настольные игры</b><span>Целая полка: от&nbsp;«Алиаса» до&nbsp;покера.</span></li>
+      <li class="reveal"><b>Матчи на&nbsp;экране</b><span>Спортивные трансляции в&nbsp;хорошей компании.</span></li>
+      <li class="reveal"><b>Можно поработать</b><span>Зарядки для телефона и&nbsp;место для ноутбука.</span></li>
+      <li class="reveal"><b>Deep house и&nbsp;chillout</b><span>Негромко, чтобы слышать друг друга.</span></li>
+      <li class="reveal"><b>Можно со&nbsp;своим</b><span>Есть пробковый сбор, подробности ниже.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- BAR -->
+<section class="bar" id="bar">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="label label--mustard">Чай и&nbsp;бар</p>
+      <h2 class="h2">Что налить <em>к&nbsp;кальяну</em></h2>
+    </div>
+    <div class="menu">
+      <article class="mcard reveal">
+        <h3>Чайная коллекция</h3>
+        <ul>
+          <li><div><b>Чёрные</b><span>от&nbsp;кенийского Мичмикуру до&nbsp;манго-маракуйи</span></div><i></i><em>600&nbsp;₽</em></li>
+          <li><div><b>Зелёные</b><span>сенча, имбирь с&nbsp;лимоном</span></div><i></i><em>600&nbsp;₽</em></li>
+          <li><div><b>Улуны</b></div><i></i><em>800&nbsp;₽</em></li>
+        </ul>
+      </article>
+      <article class="mcard reveal">
+        <h3>Бар</h3>
+        <ul>
+          <li><div><b>Домашний лимонад 0,4&nbsp;л</b><span>мохито или манго</span></div><i></i><em>400&nbsp;₽</em></li>
+          <li><div><b>Домашний лимонад 1&nbsp;л</b></div><i></i><em>900&nbsp;₽</em></li>
+          <li><div><b>Пенное</b><span>от&nbsp;бархатистых стаутов до&nbsp;ярких элей</span></div><i></i><em>от&nbsp;300&nbsp;₽</em></li>
+        </ul>
+      </article>
+      <article class="mcard mcard--cork reveal">
+        <h3>Пробковый сбор</h3>
+        <p>Хотите своё? Можно, без переплат.</p>
+        <ul>
+          <li><div><b>Пенное</b></div><i></i><em>200&nbsp;₽</em></li>
+          <li><div><b>Вино и&nbsp;игристое</b></div><i></i><em>500&nbsp;₽</em></li>
+          <li><div><b>Крепкие напитки</b></div><i></i><em>1&#8239;000&nbsp;₽</em></li>
+        </ul>
+      </article>
+    </div>
+    <p class="bar__note">Еду можно заказать с&nbsp;доставкой прямо к&nbsp;столу. Полную барную карту покажет мастер.</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="reviews__head reveal">
+      <div>
+        <p class="label">Отзывы</p>
+        <h2 class="h2">Нас советуют <em>друзьям</em></h2>
+      </div>
+      <div class="score"><b>4,6</b><span><span class="stars" aria-hidden="true">★★★★★</span>210 отзывов · 330 оценок<br>на&nbsp;Яндекс Картах</span></div>
+    </div>
+    <div class="quotes">
+      <figure class="q q--hero reveal">
+        <blockquote>Успех кальяна зависит от&nbsp;душевного подхода мастера… Это то&nbsp;самое место, где тебя понимают с&nbsp;первых трёх нот.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 22 июля</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Я&nbsp;поверила, что лучший кальян – не&nbsp;тот, который забиваешь дома.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 2 августа</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Много настольных игр, а&nbsp;самое главное – большой выбор табака! Супер мягкие диваны заставят задержаться.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 30 апреля 2025</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Кальянщик всегда позитивный, поможет с&nbsp;выбором, явно разбирается в&nbsp;этом. Огромный ассортимент табака на&nbsp;любой вкус.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 25 июня</span></figcaption>
+      </figure>
+    </div>
+    <a class="more" href="https://yandex.ru/maps/org/bayan_lounge/74312804987/reviews/" target="_blank" rel="noopener">Все отзывы на&nbsp;Яндекс Картах&nbsp;→</a>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts" id="contacts">
+  <div class="wrap contacts__grid">
+    <div class="reveal">
+      <p class="label">Контакты</p>
+      <h2 class="h2">Минута <em>от&nbsp;Бауманской</em></h2>
+      <dl class="info">
+        <div><dt>Адрес</dt><dd>Москва, Бауманская ул., 33/2с3<span class="sub"><i class="metro"></i>Бауманская · 87 м</span></dd></div>
+        <div><dt>Телефон</dt><dd><a href="tel:+79153980158">+7 (915) 398-01-58</a></dd></div>
+        <div><dt>Часы</dt><dd>Ежедневно, 12:00–02:00</dd></div>
+        <div><dt>Оплата</dt><dd>Карта, наличные, СБП, QR-код</dd></div>
+      </dl>
+      <div class="msg">
+        <a href="https://wa.me/79153980158" target="_blank" rel="noopener" class="btn btn--ghost">WhatsApp</a>
+        <a href="https://t.me/bayanloung" target="_blank" rel="noopener" class="btn btn--ghost">Telegram</a>
+      </div>
+      <div class="contacts__actions">
+        <a href="tel:+79153980158" class="btn btn--neon">Позвонить</a>
+        <a href="https://yandex.ru/maps/org/bayan_lounge/74312804987/" target="_blank" rel="noopener" class="btn btn--ghost">Построить маршрут</a>
+      </div>
+      <figure class="find">
+        <img src="img/p080.webp" alt="Фасад с неоновой вывеской Bayan Lounge" loading="lazy">
+        <figcaption>Ищите фиолетовую вывеску <b>Bayan Lounge</b> на&nbsp;белом здании, рядом с&nbsp;«Суши Wok».</figcaption>
+      </figure>
+    </div>
+    <div class="map reveal">
+      <iframe title="Bayan Lounge на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?ll=37.679489%2C55.772827&z=17&pt=37.679489%2C55.772827%2Cpm2vvl" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <a href="#top" class="footer__logo"><img src="img/bear.png" alt="" width="46" height="60" loading="lazy"><span>Bayan Lounge</span></a>
+    <nav class="footer__nav" aria-label="Разделы">
+      <a href="#hookah">Кальяны</a><a href="#inside">Внутри</a><a href="#bar">Чай и&nbsp;бар</a><a href="#contacts">Контакты</a>
+    </nav>
+    <div class="footer__meta">
+      <a href="tel:+79153980158">+7 (915) 398-01-58</a>
+      <span>Бауманская ул., 33/2с3 · 12:00–02:00</span>
+    </div>
+  </div>
+  <div class="wrap footer__legal">
+    <span>© Bayan Lounge</span>
+    <span>18+ · Информация на&nbsp;сайте носит справочный характер и&nbsp;не&nbsp;является рекламой. Чрезмерное употребление алкоголя вредит вашему здоровью.</span>
+  </div>
+</footer>
+
+<div class="dock" aria-label="Быстрые действия">
+  <a href="tel:+79153980158">Позвонить</a>
+  <a href="#hookah">Кальяны</a>
+  <a href="https://yandex.ru/maps/org/bayan_lounge/74312804987/" target="_blank" rel="noopener">Маршрут</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
